@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Calculadora de Notas | UTEC</title>
-    <link rel="stylesheet" href="estilos.css">
-    <link rel="shortcut icon" type="image/png" href="UTECFondoBlanco.png" />
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="shortcut icon" type="image/png" href="./img/UTECFondoBlanco.png" />
 </head>
 <body>
     <div class="container">
@@ -23,12 +23,12 @@
             </thead>
             <tbody>
                 <tr>
-                    <td><input required type="number" id="EV1" step="0.01"></td>
-                    <td><input required type="number" id="EV2" step="0.01"></td>
-                    <td><input required type="number" id="EV3" step="0.01"></td>
-                    <td><input required type="number" id="EV4" step="0.01"></td>
-                    <td><input required type="number" id="EV5" step="0.01"></td>
-                    <td><button onclick="calcularNotaFinal()">Calcular</button></td>
+                    <td><input required id="EV1" step="0.01"></td>
+                    <td><input required id="EV2" step="0.01"></td>
+                    <td><input required id="EV3" step="0.01"></td>
+                    <td><input required id="EV4" step="0.01"></td>
+                    <td><input required id="EV5" step="0.01"></td>
+                    <td><button id="calcular">Calcular</button></td>
                 </tr>
                 <tr id="filaResultados" style="display: none;">
                     <td id="notaEV1"></td>
@@ -42,6 +42,6 @@
         </table>
     </div>
 
-    <script src="calcularNotaFinal.js"></script>
+    <script src="./js/calcularNotaFinal.js"></script>
 </body>
 </html>
